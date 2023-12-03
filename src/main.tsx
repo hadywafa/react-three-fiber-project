@@ -1,14 +1,12 @@
-import ReactDOM from "react-dom/client";
 import "./index.css";
+import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
+import ExperienceApp from "./pages/ExperienceApp";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <>
-    <Canvas>
-      <mesh>
-        <torusKnotGeometry />
-        <meshNormalMaterial />
-      </mesh>
-    </Canvas>
-  </>
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+
+root.render(
+  <Canvas>
+    <ExperienceApp />
+  </Canvas>
 );
